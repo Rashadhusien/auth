@@ -14,6 +14,10 @@ app.use(express.json());
 
 app.use("/api/auth", authRouter);
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 // Routes
 
 app.listen(PORT, () => {
